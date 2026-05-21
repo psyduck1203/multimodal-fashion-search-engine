@@ -1,0 +1,188 @@
+[
+  {
+    "id": "2047",
+    "image_path": "../data/images/2047.jpg",
+    "category": "Tshirts",
+    "description": "Navy Blue Tshirts for Men - Sports"
+  },
+  {
+    "id": "28092",
+    "image_path": "../data/images/28092.jpg",
+    "category": "Innerwear Vests",
+    "description": "White Innerwear Vests for Men - Casual"
+  },
+  {
+    "id": "37766",
+    "image_path": "../data/images/37766.jpg",
+    "category": "Shirts",
+    "description": "Orange Shirts for Men - Casual"
+  },
+  {
+    "id": "18582",
+    "image_path": "../data/images/18582.jpg",
+    "category": "Socks",
+    "description": "Black Socks for Women - Casual"
+  },
+  {
+    "id": "1918",
+    "image_path": "../data/images/1918.jpg",
+    "category": "Backpacks",
+    "description": "Blue Backpacks for Unisex - Sports"
+  },
+  {
+    "id": "10195",
+    "image_path": "../data/images/10195.jpg",
+    "category": "Watches",
+    "description": "Blue Watches for Men - Casual"
+  },
+  {
+    "id": "2982",
+    "image_path": "../data/images/2982.jpg",
+    "category": "Tops",
+    "description": "White Tops for Women - Casual"
+  },
+  {
+    "id": "1935",
+    "image_path": "../data/images/1935.jpg",
+    "category": "Backpacks",
+    "description": "Black Backpacks for Unisex - Sports"
+  },
+  {
+    "id": "7065",
+    "image_path": "../data/images/7065.jpg",
+    "category": "Backpacks",
+    "description": "Red Backpacks for Unisex - Sports"
+  },
+  {
+    "id": "2037",
+    "image_path": "../data/images/2037.jpg",
+    "category": "Tshirts",
+    "description": "Black Tshirts for Men - Sports"
+  },
+  {
+    "id": "2055",
+    "image_path": "../data/images/2055.jpg",
+    "category": "Tshirts",
+    "description": "Grey Tshirts for Men - Casual"
+  },
+  {
+    "id": "3713",
+    "image_path": "../data/images/3713.jpg",
+    "category": "Tshirts",
+    "description": "Green Tshirts for Men - Casual"
+  },
+  {
+    "id": "12176",
+    "image_path": "../data/images/12176.jpg",
+    "category": "Shirts",
+    "description": "Green Shirts for Men - Casual"
+  },
+  {
+    "id": "2669",
+    "image_path": "../data/images/2669.jpg",
+    "category": "Handbags",
+    "description": "Brown Handbags for Women - Casual"
+  },
+  {
+    "id": "3715",
+    "image_path": "../data/images/3715.jpg",
+    "category": "Tshirts",
+    "description": "Maroon Tshirts for Men - Casual"
+  },
+  {
+    "id": "3712",
+    "image_path": "../data/images/3712.jpg",
+    "category": "Tshirts",
+    "description": "Navy Blue Tshirts for Men - Casual"
+  },
+  {
+    "id": "2054",
+    "image_path": "../data/images/2054.jpg",
+    "category": "Tshirts",
+    "description": "Maroon Tshirts for Men - Casual"
+  },
+  {
+    "id": "2053",
+    "image_path": "../data/images/2053.jpg",
+    "category": "Tshirts",
+    "description": "Grey Tshirts for Men - Casual"
+  },
+  {
+    "id": "10434",
+    "image_path": "../data/images/10434.jpg",
+    "category": "Shirts",
+    "description": "Blue Shirts for Men - Casual"
+  },
+  {
+    "id": "33048",
+    "image_path": "../data/images/33048.jpg",
+    "category": "Kurtas",
+    "description": "Blue Kurtas for Women - Ethnic"
+  },
+  {
+    "id": "11034",
+    "image_path": "../data/images/11034.jpg",
+    "category": "Tops",
+    "description": "Red Tops for Women - Casual"
+  },
+  {
+    "id": "1947",
+    "image_path": "../data/images/1947.jpg",
+    "category": "Tshirts",
+    "description": "Blue Tshirts for Men - Sports"
+  },
+  {
+    "id": "16078",
+    "image_path": "../data/images/16078.jpg",
+    "category": "Laptop Bag",
+    "description": "Black Laptop Bag for Unisex - Casual"
+  },
+  {
+    "id": "2975",
+    "image_path": "../data/images/2975.jpg",
+    "category": "Tshirts",
+    "description": "Blue Tshirts for Men - Casual"
+  },
+  {
+    "id": "37784",
+    "image_path": "../data/images/37784.jpg",
+    "category": "Shirts",
+    "description": "Blue Shirts for Men - Casual"
+  },
+  {
+    "id": "3717",
+    "image_path": "../data/images/3717.jpg",
+    "category": "Tshirts",
+    "description": "Brown Tshirts for Men - Casual"
+  },
+  {
+    "id": "2060",
+    "image_path": "../data/images/2060.jpg",
+    "category": "Tshirts",
+    "description": "Navy Blue Tshirts for Men - Casual"
+  },
+  {
+    "id": "2061",
+    "image_path": "../data/images/2061.jpg",
+    "category": "Tshirts",
+    "description": "Blue Tshirts for Men - Casual"
+  },
+  {
+    "id": "18218",
+    "image_path": "../data/images/18218.jpg",
+    "category": "Socks",
+    "description": "Black Socks for Men - Casual"
+  },
+  {
+    "id": "3716",
+    "image_path": "../data/images/3716.jpg",
+    "category": "Tshirts",
+    "description": "Black Tshirts for Men - Casual"
+  },
+  {
+    "id": "17430",
+    "image_path": "../data/images/17430.jpg",
+    "category": "Watches",
+    "description": "Black Watches for Men - Casual"
+  }
+]

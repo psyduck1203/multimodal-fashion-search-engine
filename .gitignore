@@ -1,0 +1,11 @@
+venv/
+node_modules/
+__pycache__/
+.env
+*.pyc
+dist/
+
+data/images_all/
+backend/faiss_index.bin
+backend/faiss_index.bin.ids
+.DS_Store
