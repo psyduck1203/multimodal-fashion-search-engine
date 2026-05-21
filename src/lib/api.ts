@@ -1,4 +1,4 @@
-const API_BASE = import.meta.env.VITE_API_URL || "http://localhost:8000";
+const API_BASE = import.meta.env.VITE_API_URL || "https://fashion-search-backend-3rlc.onrender.com";
 
 export interface SearchResult {
   id: string;
