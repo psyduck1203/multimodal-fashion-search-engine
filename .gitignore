@@ -1,4 +1,25 @@
+# Python
 venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+
+# FAISS
+backend/faiss_index.bin
+backend/faiss_index.bin.ids
+
+# Data
+data/images/
+data/uploads/
+
+# Environment
+.env
+backend/.env
+
+# Mac
+.DS_Storevenv/
 node_modules/
 __pycache__/
 .env

@@ -1,18 +1,40 @@
 # FashionSearch — Multimodal AI Fashion Search Engine
 
-A full-stack fashion search engine powered by OpenAI CLIP embeddings and FAISS vector similarity search. Search clothing items by text description or by uploading a photo.
+A full-stack multimodal retrieval system that enables users to search fashion products using either natural language descriptions or uploaded images.
+
+Built using CLIP embeddings, FAISS vector similarity search, FastAPI, React, and TypeScript.
 
 ---
 
 ## Architecture
 
-```
-frontend/   →  React + Tailwind CSS (Vite)
-backend/    →  FastAPI + CLIP + FAISS
-data/
-  images/   →  Seeded clothing images (downloaded from Pexels)
-  uploads/  →  User-uploaded items
-```
+                ┌─────────────┐
+                │ React UI   │
+                └──────┬──────┘
+                       │
+                       ▼
+                ┌─────────────┐
+                │FastAPI API │
+                └──────┬──────┘
+                       │
+         ┌─────────────┴─────────────┐
+         ▼                          ▼
+  CLIP Embeddings             Metadata Store
+ (Text & Images)               JSON Database
+
+         ▼
+   FAISS Vector Index
+
+         ▼
+ Similarity Search Results
+
+## Dataset
+
+This project uses the Fashion Product Images Dataset from Kaggle: https://www.kaggle.com/datasets/paramaggarwal/fashion-product-images-dataset
+
+The dataset contains fashion product images and metadata across multiple clothing categories. To keep the repository lightweight, the image dataset is not included in GitHub.
+
+Download the dataset from Kaggle and place the images inside: data/images/
 
 ### Tech Stack
 | Layer | Technology |
@@ -78,7 +100,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 
 On first startup the backend will:
 1. Load the CLIP model (~340 MB, downloaded once from HuggingFace)
-2. Download 20 sample clothing images from Pexels and save them to `data/images/`
+2. Load metadata from metadata.json
 3. Generate CLIP embeddings for all images
 4. Build and save the FAISS index to `faiss_index.bin`
 
@@ -145,30 +167,25 @@ Response: {id, message}
 
 ---
 
+## Demo Dataset
+
+For local development and demonstrations, the application indexes approximately 1,000 fashion products.
+
+The architecture supports larger datasets, but limiting the indexed subset keeps indexing and startup times manageable on standard laptops.
+
 ## Screenshots
 
-### Home / Search
-> _[Screenshot placeholder: search bar with text input and drag-and-drop image upload zone]_
+### Home Page
 
-### Text Search Results
-> _[Screenshot placeholder: grid of clothing items with similarity percentage bars]_
+![Home](screenshots/home.png)
+
+### Text Search
+
+![Text Search](screenshots/text-search.png)
 
 ### Image Search
-> _[Screenshot placeholder: uploaded image preview with matching results grid]_
 
-### Upload Modal
-> _[Screenshot placeholder: upload form with image preview, category selector, description field]_
-
----
-
-## Demo
-
-1. Type "blue denim jacket" into the search bar and press Search
-2. The CLIP model encodes your text into a 512-d vector
-3. FAISS performs cosine similarity search against all indexed image embeddings
-4. Results are ranked by similarity and displayed with match scores
-
-For image search, upload any clothing photo and the system finds the most visually similar items using CLIP's shared image-text embedding space.
+![Image Search](screenshots/image-search.png)
 
 ---
 

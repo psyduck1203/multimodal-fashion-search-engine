@@ -7,7 +7,7 @@ IMAGE_FOLDER = os.path.join(DATA_PATH, "images")
 CSV_PATH = os.path.join(DATA_PATH, "styles.csv")
 
 df = pd.read_csv(CSV_PATH, on_bad_lines='skip')
-# df = df.head(30)
+Df = pd.head(1000)
 
 data = []
 
