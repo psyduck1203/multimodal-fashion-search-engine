@@ -57,6 +57,11 @@ async def lifespan(app: FastAPI):
 
 async def build_index_from_data():
     items = metadata_db.get_all()
+
+    print(f"Found {len(items)} items")
+    print(f"Current working directory: {os.getcwd()}")
+    print(f"DATA_DIR: {DATA_DIR.resolve()}")
+
     if not items:
         print("No items found. Seeding sample data...")
         from seed import seed_data
@@ -64,14 +69,24 @@ async def build_index_from_data():
         items = metadata_db.get_all()
 
     print(f"Building index for {len(items)} items...")
+
     for item in items:
         image_path = Path(item["image_path"])
+
+        print(
+            f"Checking image: {image_path} "
+            f"exists={image_path.exists()}"
+        )
+
         if image_path.exists():
             try:
                 embedding = embedder.embed_image_path(str(image_path))
                 search_index.add(embedding, item["id"])
+                print(f"Added item {item['id']}")
             except Exception as e:
                 print(f"Error embedding {image_path}: {e}")
+
+    print(f"Final index size: {search_index.size()}")
 
     if search_index.size() > 0:
         search_index.save(FAISS_INDEX_PATH)
