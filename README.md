@@ -8,25 +8,22 @@ Built using CLIP embeddings, FAISS vector similarity search, FastAPI, React, and
 
 ## Architecture
 
-                ┌─────────────┐
-                │ React UI   │
-                └──────┬──────┘
-                       │
-                       ▼
-                ┌─────────────┐
-                │FastAPI API │
-                └──────┬──────┘
-                       │
-         ┌─────────────┴─────────────┐
-         ▼                          ▼
-  CLIP Embeddings             Metadata Store
- (Text & Images)               JSON Database
-
-         ▼
-   FAISS Vector Index
-
-         ▼
- Similarity Search Results
+```
+        React Frontend
+              │
+              ▼
+      FastAPI Backend
+              │
+  ┌───────────┴───────────┐
+  ▼                       ▼
+CLIP Embeddings     Metadata JSON DB
+  │
+  ▼
+FAISS Index
+  │
+  ▼
+Search Results
+```
 
 ## Dataset
 
@@ -177,7 +174,7 @@ The architecture supports larger datasets, but limiting the indexed subset keeps
 
 ### Home Page
 
-![Home](screenshots/home.png)
+![Home](screenshots/Home.png)
 
 ### Text Search
 
